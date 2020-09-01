@@ -1,28 +1,37 @@
-// console.log("hi");
-// alert("hi");
-
-//var , let , const
-
-// var a = "satish";
-// var b = "akash";
-// var c = a + b;
-
-// const con = 5;
-
-// alert(c);
-
-// for (let i = 0; i < 5; i++) {
-//   console.log(i);
-// }
-
-// var a = ["a", "b", "c"];
-// console.log(a);
-
-function myFunction() {
-  var inputValue = document.getElementById("abcd").value;
-  if (inputValue == "satish") {
-    document.getElementById("result").innerHTML = "Satish is the name";
-  } else {
-    document.getElementById("result").innerHTML = "Akash is the name";
+function operations(operator) {
+  if (operator != undefined) {
+    switch (operator) {
+      case "+":
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        var result = (document.getElementById("result").innerHTML =
+          "Result : " + (parseInt(a) + parseInt(b)));
+        break;
+      case "-":
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        var result = (document.getElementById("result").innerHTML =
+          "Result : " + (parseInt(a) - parseInt(b)));
+        break;
+      case "*":
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        var result = (document.getElementById("result").innerHTML =
+          "Result : " + parseInt(a) * parseInt(b));
+        break;
+      case "/":
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        var result = (document.getElementById("result").innerHTML =
+          "Result : " + parseInt(a) / parseInt(b));
+        break;
+      default:
+        var result = document
+          .getElementById("result")
+          .innerHTML("Invalid Input");
+        break;
+    }
   }
+
+  // var inputValue = document.getElementById("abcd").value;
 }

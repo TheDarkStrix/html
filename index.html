@@ -11,20 +11,24 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 bg">1</div>
-      <div class="col-md-4 bg">2</div>
-      <div class="col-md-4 bg">3</div>
-    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+    <input type="number" id="input1" class="form-control" placeholder="Input 1"/>
   </div>
-  <div class="container mt-3 mb-3">
-    <input type="text" id="abcd" class="form-control" value="some value" />
+  <div class="col-md-6">
+    <input type="number" id="input2" class="form-control" placeholder="Input 2"/>
+  </div>
+<div class="col-md-3 mt-3"><button onclick="operations('+')" class="btn btn-sm btn-primary"> + </button></div>
+<div class="col-md-3 mt-3"><button onclick="operations('-')" class="btn btn-sm btn-primary"> - </button></div>
+<div class="col-md-3 mt-3"><button onclick="operations('*')" class="btn btn-sm btn-primary"> * </button></div>
+<div class="col-md-3 mt-3"><button onclick="operations('/')" class="btn btn-sm btn-primary"> / </button></div>
+</div>
+  </div>
+  </div>
 
-    <button class="btn btn-primary mt-4" onclick="myFunction()">
-      Click me
-    </button>
+  <div id="result" class="container">
+
   </div>
-  <div id="result" class="container"></div>
 
   <!-- Bootstrap Scripts -->
   <script
